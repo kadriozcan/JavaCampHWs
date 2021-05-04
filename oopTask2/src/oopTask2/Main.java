@@ -10,10 +10,10 @@ public class Main {
 		instructor1.setFirstName("ahmet");
 		instructor1.setLastName("mehmet");
 		instructor1.seteMail("ahmet@gmail.com");
-		instructor1.setId("15");
 		instructor1.setPassword("9dd89dsf");
+		instructor1.setId(15);
 		
-		System.out.println(instructor1.getInstructorCode());
+		
 		System.out.println(student1.getStudentDepartment());
 		
 		System.out.println("----------------");
