@@ -1,6 +1,7 @@
 package oopTask3.ConsoleUI;
 
 import oopTask3.Concrete.CampaignManager;
+import oopTask3.Concrete.GameManager;
 import oopTask3.Concrete.PlayerCheckManager;
 import oopTask3.Concrete.PlayerManager;
 import oopTask3.Concrete.SellingManager;
@@ -15,8 +16,16 @@ public class Main {
 		Game gta5 = new Game(1, "Gta5", 120);
 		Game aoe2 = new Game(2, "Age of Empires 2", 20);
 		
-		Player kadri = new Player(1, "Kadri", "Ozcan", 1985, 28861499108L);
+		GameManager gameManager = new GameManager();
+		gameManager.add(gta5);
+		gameManager.add(aoe2);
+		
+		System.out.println("--------");
+		
+		Player kadri = new Player(1, "Kadri", "Ozcan", 1985, 2861499108L);
 		Player ali = new Player(2, "Ali", "Veli", 2005, 45874585478L);
+		
+
 		
 		Campaign campaign = new Campaign(1, "Yilbasi Kampanyasi", "5 ay");
 		
@@ -24,6 +33,8 @@ public class Main {
 		
 		PlayerManager playerManager = new PlayerManager(new PlayerCheckManager());
 		SellingManager sellingManager = new SellingManager();
+		
+		
 		
 		playerManager.add(kadri);
 		playerManager.update(kadri);
