@@ -5,6 +5,7 @@ import oopTask3.Abstract.PlayerService;
 import oopTask3.Entitites.Player;
 
 public class PlayerManager implements PlayerService{
+	
 	PlayerCheckService playerCheckService;
 	
 	public PlayerManager(PlayerCheckService playerCheckService) {
